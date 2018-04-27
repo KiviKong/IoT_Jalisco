@@ -28,7 +28,7 @@ export class Mapa extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mapArea">
         <div className="gridMap">
           {this.renderDivs()}
         </div>
