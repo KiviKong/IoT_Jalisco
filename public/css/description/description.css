@@ -1,0 +1,12 @@
+.gridDescription {
+    width: 100%;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(1, [col] 100%);
+    grid-template-rows: repeat(2, [row] 50%);
+}
+
+.buildingDescriptionArea {
+    grid-row: row 2;
+    grid-column: col 1;
+}

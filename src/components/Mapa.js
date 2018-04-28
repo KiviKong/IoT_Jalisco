@@ -32,7 +32,6 @@ export class Mapa extends React.Component {
         <div className="gridMap">
           {this.renderDivs()}
         </div>
-        <button onClick={this.changueDivColor}>magia</button>
       </div>
     );
   }
