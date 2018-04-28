@@ -22,6 +22,7 @@ export class MainComponent extends React.Component {
   render() {
     return (
         <div className="gridScreen">
+            <div className="titleArea"><h1>Mapa del Campus</h1></div>
             <Mapa />
             <Description onMouseOver = {this.changueBuildingDescription}/>
             <Information edificio={this.state.edificio} />

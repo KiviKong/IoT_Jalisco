@@ -2,21 +2,29 @@
     width: 100%;
     height: 100vh;
     display: grid; 
-    grid-template-columns: [col1] 50% [col2] 15% [col3] 35%;
-    grid-template-rows: repeat(1, [row] 100%);
+    grid-template-columns: [col1] 50% [col2] 20% [col3] 30%;
+    grid-template-rows: [row1] 10% [row2] 90%;
+}
+
+.titleArea {
+    grid-row: row1;
+    grid-column: col2 /span 2;
+    text-align: center;
+    background-color: #203665;
+    color: white;
 }
 
 .mapArea {
-    grid-row: row 1;
+    grid-row: row1 /span 2;
     grid-column: col1;
 }
 
 .descriptionArea {
-    grid-row: row 1;
+    grid-row: row2;
     grid-column: col2;
 }
 
 .informationArea {
-    grid-row: row 1;
+    grid-row: row2;
     grid-column: col3;
 }

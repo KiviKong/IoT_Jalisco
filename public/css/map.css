@@ -4,9 +4,9 @@
     display: grid; 
     grid-template-columns: repeat(20, [col] 5%);
     grid-template-rows: repeat(20, [row] 5%);
-    -webkit-box-shadow: 14px 3px 23px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 14px 3px 23px -8px rgba(0,0,0,0.75);
-    box-shadow: 14px 3px 23px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
 }
 
 #block_1_1 { 

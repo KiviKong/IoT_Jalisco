@@ -1,0 +1,118 @@
+.gridDescription {
+    width: 100%;
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(1, [col] 100%);
+    grid-template-rows: repeat(1, [row] 100%);
+}
+
+.buildingDescriptionArea {
+    grid-row: row 1;
+    grid-column: col 1;
+}
+
+.buildingList {
+    width: 100%;
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(1, [col] 100%);
+    grid-template-rows: repeat(9, [row] 11.1%);
+}
+
+.building_1 {
+    grid-row: row 1;
+    grid-column: col 1;
+}
+
+.building_2 {
+    grid-row: row 2;
+    grid-column: col 1;
+}
+
+.building_3 {
+    grid-row: row 3;
+    grid-column: col 1;
+}
+
+.building_4 {
+    grid-row: row 4;
+    grid-column: col 1;
+}
+
+.building_5 {
+    grid-row: row 5;
+    grid-column: col 1;
+}
+
+.building_6 {
+    grid-row: row 6;
+    grid-column: col 1;
+}
+
+.building_7 {
+    grid-row: row 7;
+    grid-column: col 1;
+}
+
+.building_8 {
+    grid-row: row 8;
+    grid-column: col 1;
+}
+
+.building_9 {
+    grid-row: row 9;
+    grid-column: col 1;
+}
+
+/* Personalización de etiquetas de edificios */
+
+.gridBuildingLabels {
+    width: 80%;
+    height: 80%;
+    display: grid; 
+    grid-template-columns: [col1] 30% [col2] 70%;
+    grid-template-rows:  [row1] 100%;
+    background-color: #EFF3F4;
+    border-radius: 15px;
+    margin: 5%;
+
+    -webkit-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+}
+
+.BuildingLabels_name {
+    grid-row: row1;
+    grid-column: col1;
+}
+
+.BuildingLabels_circle {
+    height: 60%;
+    width: 50%;
+    margin: 20%;
+    background-color:#203665;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.BuildingLabels_circle h2 {
+    margin: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BuildingLabels_description {
+    margin: 10px;
+    grid-row: row1;
+    grid-column: col2;
+    position: relative;
+}
+
+.BuildingLabels_description p {
+    margin-top: 10%;
+    margin-bottom: 0%;
+}

@@ -11,28 +11,38 @@ export class BuildingDescription extends React.Component {
   }
 
   handleMouseOver = (e) => {
-      this.props.onMouseOver(elementos.get(e.target.innerText));
+    if (e.target.className === 'gridBuildingLabels') 
+        this.props.onMouseOver(elementos.get(e.target.textContent.charAt(0)));
   }
 
   createBuildings = () => {
-    edificios.forEach((e) =>{
-        elementos.set(e.nombre, e);
-    });
-
-    return edificios.map((element,i) => {
-        return (
-            <li key={i}>
-                <h2 onMouseOver={this.handleMouseOver} >{element.nombre}</h2>
-                <h3>{element.descripcion}</h3>
-            </li>
-        )
-    });
+    let buildings = [];
+    for (let i = 0; i < edificios.length; i++) {
+        elementos.set(edificios[i].nombre, edificios[i]);
+        buildings.push(
+            (
+                <div key={i} className={'building_' + (i+1)}>
+                    <div className="gridBuildingLabels" onMouseOver={this.handleMouseOver}>
+                        <div className="BuildingLabels_name">
+                            <div className="BuildingLabels_circle">
+                                <h2>{edificios[i].nombre}</h2>
+                            </div>
+                        </div>
+                        <div className="BuildingLabels_description"><p>{edificios[i].resumen}</p></div>
+                    </div>
+                </div>
+            )
+        );
+    }
+    return buildings;
   }
 
   render() {
     return (
         <div className="buildingDescriptionArea">
-            <ul>{this.createBuildings()}</ul>
+            <div className="buildingList">
+                {this.createBuildings()}
+            </div>
         </div>
     );
   }

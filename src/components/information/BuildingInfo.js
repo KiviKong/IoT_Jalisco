@@ -11,7 +11,8 @@ export class BuildingInfo extends React.Component {
     return (
         <div className="buildingInformationArea">
             <h1>{this.props.edificio.nombre}</h1>
-            <h2>{this.props.edificio.descripcion}</h2>
+            <h2>{this.props.edificio.resumen}</h2>
+            <p>{this.props.edificio.descripcion}</p>
         </div>
     );
   }
