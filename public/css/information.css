@@ -10,3 +10,8 @@
     grid-row: row 2;
     grid-column: col 1;
 }
+
+.userInformationArea {
+    grid-row: row 1;
+    grid-column: col 1;
+}
