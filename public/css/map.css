@@ -7,7 +7,74 @@
     -webkit-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    color: white;
 }
+
+/* Letras en los edificios */
+
+.mapBuilding-A {
+    grid-row: row 2 / span 3;
+    grid-column: col 2 / span 3;
+    position: relative;
+}
+
+.mapBuilding-B {
+    grid-row: row 7 / span 3;
+    grid-column: col 1 / span 2;
+    position: relative;
+}
+
+.mapBuilding-C {
+    grid-row: row 13 / span 2;
+    grid-column: col 2 / span 5;
+    position: relative;
+}
+
+.mapBuilding-D {
+    grid-row: row 17 / span 2;
+    grid-column: col 2 / span 5;
+    position: relative;
+}
+
+.mapBuilding-E {
+    grid-row: row 15 / span 4;
+    grid-column: col 15 / span 5;
+    position: relative;
+}
+
+.mapBuilding-F {
+    grid-row: row 13 / span 2;
+    grid-column: col 11 / span 2;
+    position: relative;
+}
+
+.mapBuilding-G {
+    grid-row: row 9 / span 2;
+    grid-column: col 17 / span 2;
+    position: relative;
+}
+
+.mapBuilding-H {
+    grid-row: row 7 / span 3;
+    grid-column: col 8 / span 5;
+    position: relative;
+}
+
+.mapBuilding-M {
+    grid-row: row 2 / span 3;
+    grid-column: col 16 / span 4;
+    position: relative;
+}
+
+.gridMap h1{
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* dibujado de mapa */
 
 #block_1_1 { 
     grid-row: row 1;

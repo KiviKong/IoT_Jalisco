@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mapa } from './Mapa.js';
+import { Mapa } from './map/Mapa.js';
 import { Information } from './information/Information.js';
 import { Description } from './description/Description.js';
 
@@ -9,8 +9,10 @@ export class MainComponent extends React.Component {
 
     this.state = {
         edificio : {
-            nombre: 'M',
-            descripcion: 'Este edificio se la come'
+            nombre: '',
+            resumen: '',
+            descripcion: '',
+            coordenadas: []
         }
     }
   }
@@ -23,7 +25,7 @@ export class MainComponent extends React.Component {
     return (
         <div className="gridScreen">
             <div className="titleArea"><h1>Mapa del Campus</h1></div>
-            <Mapa />
+            <Mapa edificio={this.state.edificio}/>
             <Description onMouseOver = {this.changueBuildingDescription}/>
             <Information edificio={this.state.edificio} />
         </div>
