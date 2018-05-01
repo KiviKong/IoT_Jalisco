@@ -3,10 +3,11 @@ import { Mapa } from './map/Mapa.js';
 import { Information } from './information/Information.js';
 import { Description } from './description/Description.js';
 import { graphPoints } from './coords';
+import { extras } from './extras';
 import Graph from 'node-dijkstra';
 import io from 'socket.io-client';
 
-//const socket = io.connect('http://localhost:8082');
+const socket = io.connect('http://localhost:8082');
 const route = new Graph(graphPoints);
 let userReceivedGlobal = null;
 
@@ -51,9 +52,9 @@ const pathToGod = (graphPoints) => {
 }
 
 const connection = {
-    // connectToServer: (message) => {
-    //     socket.emit('front-message',message);
-    // }
+     connectToServer: (message) => {
+         socket.emit('front-message',message);
+     }
 }
 
 export class MainComponent extends React.Component {
@@ -61,13 +62,7 @@ export class MainComponent extends React.Component {
     super(props)
 
     this.state = {
-        edificio : {
-            nombre: '',
-            resumen: '',
-            descripcion: 'Para más información toca una etiqueta de algún edificio',
-            coordenadas: [],
-            img: ''
-        }, 
+        edificio : extras.edificio, 
         user: {
           Attributes:{
             nombre:{
@@ -79,17 +74,17 @@ export class MainComponent extends React.Component {
         currentPos: [0,0]
     }
     
-    //connection.connectToServer('conection started');
-    //this.serverMessage();
+    connection.connectToServer('conection started');
+    this.serverMessage();
   }
 
   serverMessage = () => {
-    // let points;
-    // socket.on('server-message', (userReceived) => {
-    //   userReceivedGlobal = userReceived;
-    //   points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
-    //   this.setState({user:userReceived, coords: pathToGod(points), currentPos:[Number(userReceived.Attributes.x.N), Number(userReceived.Attributes.y.N)]});
-    // });
+     let points;
+     socket.on('server-message', (userReceived) => {
+       userReceivedGlobal = userReceived;
+       points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
+       this.setState({user:userReceived, coords: pathToGod(points), currentPos:[Number(userReceived.Attributes.x.N), Number(userReceived.Attributes.y.N)]});
+     });
   }
 
   changueBuildingDescription = (nuevo) => {
@@ -101,16 +96,19 @@ export class MainComponent extends React.Component {
     let points1, points2;
 
     if (userReceivedGlobal === null) {
-      console.log('aguantala');
+      if (boolean)
+        this.setState({edificio: extras.interestingBuilding});
+      else
+        this.setState({edificio: extras.edificio});
     } else {
       
       if (boolean) {
-        points1 = route.path('_' + userReceivedGlobal.Attributes.x.N + '_' + userReceivedGlobal.Attributes.y.N , '_9_6');
-        points2 = route.path('_9_6','_' + userReceivedGlobal.Attributes.x2.N + '_' + userReceivedGlobal.Attributes.y2.N);
-        this.setState({coords: pathToGod(points1.concat(points2))});
+        points1 = route.path('_' + userReceivedGlobal.Attributes.x.N + '_' + userReceivedGlobal.Attributes.y.N , extras.interestingBuilding.punto);
+        points2 = route.path(extras.interestingBuilding.punto,'_' + userReceivedGlobal.Attributes.x2.N + '_' + userReceivedGlobal.Attributes.y2.N);
+        this.setState({coords: pathToGod(points1.concat(points2)), edificio: extras.interestingBuilding});
       } else {
         points1 = route.path('_' + userReceivedGlobal.Attributes.x.N + '_' + userReceivedGlobal.Attributes.y.N , '_' + userReceivedGlobal.Attributes.x2.N + '_' + userReceivedGlobal.Attributes.y2.N);
-        this.setState({coords: pathToGod(points1)});
+        this.setState({coords: pathToGod(points1), edificio: extras.edificio});
       }
     }
 
