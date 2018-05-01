@@ -62,7 +62,7 @@ export class MainComponent extends React.Component {
     super(props)
 
     this.state = {
-        edificio : extras.edificio, 
+        edificio : extras.event, 
         user: {
           Attributes:{
             nombre:{

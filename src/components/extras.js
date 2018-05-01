@@ -7,6 +7,13 @@ export const extras = {
         img: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Plaza_de_los_cincuenta.jpg',
         punto: '_9_6'
     },
+    event: {
+        nombre: "¡Evento Próximo!",
+        resumen: "",
+        descripcion: "Asite este 10 Mayo a las 3:00 pm en el auditorio del edificio K a un festival del día de la madre. Participarán los alumnos de danza contemporánea.",
+        coordenadas: [[2,16],[2,17],[2,18],[2,19],[3,16],[3,17],[3,18],[3,19],[4,16],[4,17],[4,18],[4,19]],
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/BibliotecaITESO.jpg/654px-BibliotecaITESO.jpg',
+    },
     edificio : {
         nombre: '',
         resumen: '',
