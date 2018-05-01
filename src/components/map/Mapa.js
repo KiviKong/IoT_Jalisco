@@ -14,7 +14,8 @@ export class Mapa extends React.Component {
       for (let y = 0; y < 20; y++) {
         const current = this.props.edificio.coordenadas.find(c => c[0] === (x+1) && c[1] === (y+1));
         const currentx2 = this.props.coords.find(c => c[0] === (x+1) && c[1] === (y+1));
-        blocks.push(<div key={x + '_' + y} id={'block_' + (x+1) + '_' + (y+1)} style={{backgroundColor: current ? '#91A8DA': currentx2 ? '#F5AF85': ''}}></div>);
+        const currentx3 = (this.props.currentPos[0] === (x+1) && this.props.currentPos[1] === (y+1)) ? true: false;
+        blocks.push(<div key={x + '_' + y} id={'block_' + (x+1) + '_' + (y+1)} style={{backgroundColor: current ? '#91A8DA': currentx2 ? '#F5AF85': currentx3? '#C7590E': ''}}></div>);
       }
     } // borderStyle: currentx2 ? 'solid': ''
     return blocks;
@@ -33,7 +34,7 @@ export class Mapa extends React.Component {
   renderModuleLabels = () => {
     return modules.coords.map((e,i) => {
       return (
-        <div key={e} className={'mapModule-'+ i + (i === modules.curerntPos ? ' currentModule' : '')}>
+        <div key={e} className={'mapModule-'+ i}>
             <h1>!</h1>
         </div>
       )
