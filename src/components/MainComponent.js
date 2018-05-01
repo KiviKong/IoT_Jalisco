@@ -82,7 +82,6 @@ export class MainComponent extends React.Component {
   serverMessage = () => {
     let points;
     socket.on('server-message', (userReceived) => {
-      console.log('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N);
       points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
       this.setState({user:userReceived, coords: pathToGod(points)});
     });

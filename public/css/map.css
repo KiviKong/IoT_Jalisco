@@ -12,58 +12,134 @@
 
 /* Letras en los edificios */
 
-.mapBuilding-A {
+.mapBuilding-0 {
     grid-row: row 2 / span 3;
     grid-column: col 2 / span 3;
     position: relative;
 }
 
-.mapBuilding-B {
+.mapBuilding-1 {
     grid-row: row 7 / span 3;
     grid-column: col 1 / span 2;
     position: relative;
 }
 
-.mapBuilding-C {
+.mapBuilding-2 {
     grid-row: row 13 / span 2;
     grid-column: col 2 / span 5;
     position: relative;
 }
 
-.mapBuilding-D {
+.mapBuilding-3 {
     grid-row: row 17 / span 2;
     grid-column: col 2 / span 5;
     position: relative;
 }
 
-.mapBuilding-E {
+.mapBuilding-4 {
     grid-row: row 15 / span 4;
     grid-column: col 15 / span 5;
     position: relative;
 }
 
-.mapBuilding-F {
+.mapBuilding-5 {
     grid-row: row 13 / span 2;
     grid-column: col 11 / span 2;
     position: relative;
 }
 
-.mapBuilding-G {
+.mapBuilding-6 {
     grid-row: row 9 / span 2;
     grid-column: col 17 / span 2;
     position: relative;
 }
 
-.mapBuilding-H {
+.mapBuilding-7 {
     grid-row: row 7 / span 3;
     grid-column: col 8 / span 5;
     position: relative;
 }
 
-.mapBuilding-M {
+.mapBuilding-8 {
     grid-row: row 2 / span 3;
     grid-column: col 16 / span 4;
     position: relative;
+}
+
+.mapModule-0 {
+    grid-row: row 20;
+    grid-column: col 11;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-1 {
+    grid-row: row 16;
+    grid-column: col 5;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-2 {
+    grid-row: row 12;
+    grid-column: col 5;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-3 {
+    grid-row: row 8;
+    grid-column: col 3;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-4 {
+    grid-row: row 3;
+    grid-column: col 5;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-5 {
+    grid-row: row 6;
+    grid-column: col 11;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-6 {
+    grid-row: row 3;
+    grid-column: col 15;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-7 {
+    grid-row: row 9;
+    grid-column: col 16;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-8 {
+    grid-row: row 11;
+    grid-column: col 12;
+    position: relative;
+    border-style: solid;
+}
+
+.mapModule-9 {
+    grid-row: row 14;
+    grid-column: col 14;
+    position: relative;
+    border-style: solid;
+}
+
+.currentModule {
+    border-color: black;
+    color: black;
+    background-color: white;
 }
 
 .gridMap h1{
@@ -234,22 +310,22 @@
  #block_2_12 { 
     grid-row: row 2;
     grid-column: col 12;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_2_13 { 
     grid-row: row 2;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_2_14 { 
     grid-row: row 2;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_2_15 { 
     grid-row: row 2;
     grid-column: col 15;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_2_16 { 
     grid-row: row 2;
@@ -299,7 +375,7 @@
  #block_3_5 { 
     grid-row: row 3;
     grid-column: col 5;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_3_6 { 
     grid-row: row 3;
@@ -334,7 +410,7 @@
  #block_3_12 { 
     grid-row: row 3;
     grid-column: col 12;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_3_13 { 
     grid-row: row 3;
@@ -349,7 +425,7 @@
  #block_3_15 { 
     grid-row: row 3;
     grid-column: col 15;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_3_16 { 
     grid-row: row 3;
@@ -399,42 +475,42 @@
  #block_4_5 { 
     grid-row: row 4;
     grid-column: col 5;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_4_6 { 
     grid-row: row 4;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_7 { 
     grid-row: row 4;
     grid-column: col 7;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_8 { 
     grid-row: row 4;
     grid-column: col 8;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_9 { 
     grid-row: row 4;
     grid-column: col 9;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_10 { 
     grid-row: row 4;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_11 { 
     grid-row: row 4;
     grid-column: col 11;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_12 { 
     grid-row: row 4;
     grid-column: col 12;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_4_13 { 
     grid-row: row 4;
@@ -504,7 +580,7 @@
  #block_5_6 { 
     grid-row: row 5;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_5_7 { 
     grid-row: row 5;
@@ -534,17 +610,17 @@
  #block_5_12 { 
     grid-row: row 5;
     grid-column: col 12;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_5_13 { 
     grid-row: row 5;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_5_14 { 
     grid-row: row 5;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_5_15 { 
     grid-row: row 5;
@@ -604,7 +680,7 @@
  #block_6_6 { 
     grid-row: row 6;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_6_7 { 
     grid-row: row 6;
@@ -629,12 +705,12 @@
  #block_6_11 { 
     grid-row: row 6;
     grid-column: col 11;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_6_12 { 
     grid-row: row 6;
     grid-column: col 12;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_6_13 { 
     grid-row: row 6;
@@ -644,7 +720,7 @@
  #block_6_14 { 
     grid-row: row 6;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_6_15 { 
     grid-row: row 6;
@@ -704,7 +780,7 @@
  #block_7_6 { 
     grid-row: row 7;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_7_7 { 
     grid-row: row 7;
@@ -744,7 +820,7 @@
  #block_7_14 { 
     grid-row: row 7;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_7_15 { 
     grid-row: row 7;
@@ -789,7 +865,7 @@
  #block_8_3 { 
     grid-row: row 8;
     grid-column: col 3;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_8_4 { 
     grid-row: row 8;
@@ -804,7 +880,7 @@
  #block_8_6 { 
     grid-row: row 8;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_8_7 { 
     grid-row: row 8;
@@ -844,7 +920,7 @@
  #block_8_14 { 
     grid-row: row 8;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_8_15 { 
     grid-row: row 8;
@@ -889,22 +965,22 @@
  #block_9_3 { 
     grid-row: row 9;
     grid-column: col 3;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_9_4 { 
     grid-row: row 9;
     grid-column: col 4;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_9_5 { 
     grid-row: row 9;
     grid-column: col 5;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_9_6 { 
     grid-row: row 9;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_9_7 { 
     grid-row: row 9;
@@ -944,7 +1020,7 @@
  #block_9_14 { 
     grid-row: row 9;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_9_15 { 
     grid-row: row 9;
@@ -954,7 +1030,7 @@
  #block_9_16 { 
     grid-row: row 9;
     grid-column: col 16;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_9_17 { 
     grid-row: row 9;
@@ -1004,7 +1080,7 @@
  #block_10_6 { 
     grid-row: row 10;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_10_7 { 
     grid-row: row 10;
@@ -1044,17 +1120,17 @@
  #block_10_14 { 
     grid-row: row 10;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_10_15 { 
     grid-row: row 10;
     grid-column: col 15;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_10_16 { 
     grid-row: row 10;
     grid-column: col 16;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_10_17 { 
     grid-row: row 10;
@@ -1104,27 +1180,27 @@
  #block_11_6 { 
     grid-row: row 11;
     grid-column: col 6;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_7 { 
     grid-row: row 11;
     grid-column: col 7;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_8 { 
     grid-row: row 11;
     grid-column: col 8;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_9 { 
     grid-row: row 11;
     grid-column: col 9;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_10 { 
     grid-row: row 11;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_11 { 
     grid-row: row 11;
@@ -1134,7 +1210,7 @@
  #block_11_12 { 
     grid-row: row 11;
     grid-column: col 12;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_11_13 { 
     grid-row: row 11;
@@ -1144,7 +1220,7 @@
  #block_11_14 { 
     grid-row: row 11;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_11_15 { 
     grid-row: row 11;
@@ -1199,12 +1275,12 @@
  #block_12_5 { 
     grid-row: row 12;
     grid-column: col 5;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_12_6 { 
     grid-row: row 12;
     grid-column: col 6;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_12_7 { 
     grid-row: row 12;
@@ -1224,27 +1300,27 @@
  #block_12_10 { 
     grid-row: row 12;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_12_11 { 
     grid-row: row 12;
     grid-column: col 11;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_12_12 { 
     grid-row: row 12;
     grid-column: col 12;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_12_13 { 
     grid-row: row 12;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_12_14 { 
     grid-row: row 12;
     grid-column: col 14;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_12_15 { 
     grid-row: row 12;
@@ -1324,7 +1400,7 @@
  #block_13_10 { 
     grid-row: row 13;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_13_11 { 
     grid-row: row 13;
@@ -1339,7 +1415,7 @@
  #block_13_13 { 
     grid-row: row 13;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_13_14 { 
     grid-row: row 13;
@@ -1424,7 +1500,7 @@
  #block_14_10 { 
     grid-row: row 14;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_14_11 { 
     grid-row: row 14;
@@ -1439,7 +1515,7 @@
  #block_14_13 { 
     grid-row: row 14;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_14_14 { 
     grid-row: row 14;
@@ -1524,27 +1600,27 @@
  #block_15_10 { 
     grid-row: row 15;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_15_11 { 
     grid-row: row 15;
     grid-column: col 11;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_15_12 { 
     grid-row: row 15;
     grid-column: col 12;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_15_13 { 
     grid-row: row 15;
     grid-column: col 13;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_15_14 { 
     grid-row: row 15;
     grid-column: col 14;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_15_15 { 
     grid-row: row 15;
@@ -1599,32 +1675,32 @@
  #block_16_5 { 
     grid-row: row 16;
     grid-column: col 5;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_16_6 { 
     grid-row: row 16;
     grid-column: col 6;
-    background-color: #CC5506; 
+    background-color: #FDE5D4; 
  }
  #block_16_7 { 
     grid-row: row 16;
     grid-column: col 7;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_16_8 { 
     grid-row: row 16;
     grid-column: col 8;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_16_9 { 
     grid-row: row 16;
     grid-column: col 9;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_16_10 { 
     grid-row: row 16;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_16_11 { 
     grid-row: row 16;
@@ -1724,7 +1800,7 @@
  #block_17_10 { 
     grid-row: row 17;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_17_11 { 
     grid-row: row 17;
@@ -1824,7 +1900,7 @@
  #block_18_10 { 
     grid-row: row 18;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_18_11 { 
     grid-row: row 18;
@@ -1924,7 +2000,7 @@
  #block_19_10 { 
     grid-row: row 19;
     grid-column: col 10;
-    background-color: #FDCCA4; 
+    background-color: #FDE5D4; 
  }
  #block_19_11 { 
     grid-row: row 19;
@@ -2024,12 +2100,12 @@
  #block_20_10 { 
     grid-row: row 20;
     grid-column: col 10;
-    background-color: #CC5506; 
+    background-color: #C7590E; 
  }
  #block_20_11 { 
     grid-row: row 20;
     grid-column: col 11;
-    background-color: #D5D9E4; 
+    background-color: #D5D9E4;; 
  }
  #block_20_12 { 
     grid-row: row 20;
