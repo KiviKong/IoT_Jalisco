@@ -8,6 +8,7 @@ import io from 'socket.io-client';
 
 const socket = io.connect('http://localhost:8082');
 const route = new Graph(graphPoints);
+let userReceivedGlobal = null;
 
 const pathToGod = (graphPoints) => {
   let coords = [];
@@ -62,8 +63,9 @@ export class MainComponent extends React.Component {
         edificio : {
             nombre: '',
             resumen: '',
-            descripcion: '',
-            coordenadas: []
+            descripcion: 'Para más información toca una etiqueta de algún edificio',
+            coordenadas: [],
+            img: ''
         }, 
         user: {
           Attributes:{
@@ -82,6 +84,7 @@ export class MainComponent extends React.Component {
   serverMessage = () => {
     let points;
     socket.on('server-message', (userReceived) => {
+      userReceivedGlobal = userReceived;
       points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
       this.setState({user:userReceived, coords: pathToGod(points)});
     });
@@ -91,13 +94,33 @@ export class MainComponent extends React.Component {
     this.setState({edificio:nuevo});
   }
 
+  changueRoute = (boolean) => {
+
+    let points1, points2;
+
+    if (userReceivedGlobal === null) {
+      console.log('aguantala');
+    } else {
+      
+      if (boolean) {
+        points1 = route.path('_' + userReceivedGlobal.Attributes.x.N + '_' + userReceivedGlobal.Attributes.y.N , '_9_6');
+        points2 = route.path('_9_6','_' + userReceivedGlobal.Attributes.x2.N + '_' + userReceivedGlobal.Attributes.y2.N);
+        this.setState({coords: pathToGod(points1.concat(points2))});
+      } else {
+        points1 = route.path('_' + userReceivedGlobal.Attributes.x.N + '_' + userReceivedGlobal.Attributes.y.N , '_' + userReceivedGlobal.Attributes.x2.N + '_' + userReceivedGlobal.Attributes.y2.N);
+        this.setState({coords: pathToGod(points1)});
+      }
+    }
+
+  }
+
   render() {
     return (
         <div className="gridScreen">
-            <div className="titleArea"><h1>Mapa del Campus</h1></div>
+            <div className="titleArea"><h1>Módulo De Información</h1></div>
             <Mapa edificio={this.state.edificio} coords={this.state.coords} />
             <Description onMouseOver = {this.changueBuildingDescription} />
-            <Information edificio={this.state.edificio} user={this.state.user} />
+            <Information edificio={this.state.edificio} user={this.state.user} onClick = {this.changueRoute}/>
         </div>
     );
   }

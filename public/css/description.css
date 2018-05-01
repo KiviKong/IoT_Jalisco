@@ -68,7 +68,7 @@
 
 .gridBuildingLabels {
     width: 80%;
-    height: 80%;
+    height: 70%;
     display: grid; 
     grid-template-columns: [col1] 30% [col2] 70%;
     grid-template-rows:  [row1] 100%;
@@ -88,7 +88,7 @@
 
 .BuildingLabels_circle {
     height: 60%;
-    width: 50%;
+    width: 60%;
     margin: 20%;
     background-color:#203665;
     text-align: center;

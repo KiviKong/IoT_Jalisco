@@ -1,3 +1,8 @@
+h1 b {
+    color: #91A8DA;
+    font-weight: bold;
+}
+
 .gridInformation {
     width: 100%;
     height: 100%;
@@ -14,4 +19,69 @@
 .userInformationArea {
     grid-row: row 1;
     grid-column: col 1;
+}
+
+.griduserInformationArea {
+    width: 95%;
+    height: 100%;
+    display: grid; 
+    grid-template-columns: repeat(1, [col] 100%);
+    grid-template-rows: repeat(3, [row] 33.3%);
+}
+
+.userInfogreeting {
+    grid-row: row 1;
+    grid-column: col 1;
+}
+
+.userInfogreeting h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.userInfoButtons {
+    grid-row: row 2;
+    grid-column: col 1;
+    position: relative;
+}
+
+.gridBuildingCard {
+    width: 95%;
+    height: 95%;
+    display: grid; 
+    grid-template-columns: repeat(1, [col] 100%);
+    grid-template-rows: [row1] 35% [row2] 65%; 
+    background-color: #91A8DA;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
+}
+
+.buildingInformation {
+    grid-row: row1;
+    grid-column: col 1;
+    color: white;
+}
+
+.buildingInformation p ,h2, h3{
+    margin: 4%;   
+    text-align: justify;
+}
+
+.buildingImg {
+    grid-row: row2;
+    grid-column: col 1;
+    position: relative;
+}
+
+.buildingImg img{
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
 }
