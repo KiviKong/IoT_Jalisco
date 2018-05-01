@@ -6,7 +6,7 @@ import { graphPoints } from './coords';
 import Graph from 'node-dijkstra';
 import io from 'socket.io-client';
 
-const socket = io.connect('http://localhost:8082');
+//const socket = io.connect('http://localhost:8082');
 const route = new Graph(graphPoints);
 let userReceivedGlobal = null;
 
@@ -51,9 +51,9 @@ const pathToGod = (graphPoints) => {
 }
 
 const connection = {
-    connectToServer: (message) => {
-        socket.emit('front-message',message);
-    }
+    // connectToServer: (message) => {
+    //     socket.emit('front-message',message);
+    // }
 }
 
 export class MainComponent extends React.Component {
@@ -79,17 +79,17 @@ export class MainComponent extends React.Component {
         currentPos: [0,0]
     }
     
-    connection.connectToServer('conection started');
-    this.serverMessage();
+    //connection.connectToServer('conection started');
+    //this.serverMessage();
   }
 
   serverMessage = () => {
-    let points;
-    socket.on('server-message', (userReceived) => {
-      userReceivedGlobal = userReceived;
-      points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
-      this.setState({user:userReceived, coords: pathToGod(points), currentPos:[Number(userReceived.Attributes.x.N), Number(userReceived.Attributes.y.N)]});
-    });
+    // let points;
+    // socket.on('server-message', (userReceived) => {
+    //   userReceivedGlobal = userReceived;
+    //   points = route.path('_' + userReceived.Attributes.x.N + '_' + userReceived.Attributes.y.N , '_' + userReceived.Attributes.x2.N + '_' + userReceived.Attributes.y2.N);
+    //   this.setState({user:userReceived, coords: pathToGod(points), currentPos:[Number(userReceived.Attributes.x.N), Number(userReceived.Attributes.y.N)]});
+    // });
   }
 
   changueBuildingDescription = (nuevo) => {
@@ -121,7 +121,7 @@ export class MainComponent extends React.Component {
         <div className="gridScreen">
             <div className="titleArea"><h1>Módulo De Información</h1></div>
             <Mapa edificio={this.state.edificio} coords={this.state.coords} currentPos = {this.state.currentPos}/>
-            <Description onMouseOver = {this.changueBuildingDescription} />
+            <Description onClick = {this.changueBuildingDescription} />
             <Information edificio={this.state.edificio} user={this.state.user} onClick = {this.changueRoute}/>
         </div>
     );

@@ -24,12 +24,12 @@ export class UserInfo extends React.Component {
             </div>
             <div className="userInfoColorsCode">
               <div className="gridInfoColorsCode">
-                <div className="currentPosColor margin10"></div><div className="currentPostext margin10">Tu posición</div>
-                <div className="trackColor margin10"></div><div className="trackText margin10">Pasillos</div>
-                <div className="pathColor margin10"></div><div className="pathText margin10">Tu ruta</div>
-                <div className="yardColor margin10"></div><div className="yardText margin10">Jardínes</div>
-                <div className="buildingColor margin10"></div><div className="buildingText margin10">Edificio</div>
-                <div className="lavaColor margin10"></div><div className="lavaText margin10">Lava</div>
+                <div className="currentPosColor margin10"></div><div className="currentPostext margin10"><p>Tu posición</p></div>
+                <div className="trackColor margin10"></div><div className="trackText margin10"><p>Pasillos</p></div>
+                <div className="pathColor margin10"></div><div className="pathText margin10"><p>Tu ruta</p></div>
+                <div className="yardColor margin10"></div><div className="yardText margin10"><p>Jardínes</p></div>
+                <div className="buildingColor margin10"></div><div className="buildingText margin10"><p>Edificio</p></div>
+                <div className="lavaColor margin10"></div><div className="lavaText margin10"><p>Lava</p></div>
               </div>
             </div>
           </div>

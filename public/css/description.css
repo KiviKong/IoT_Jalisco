@@ -75,6 +75,7 @@
     background-color: #EFF3F4;
     border-radius: 15px;
     margin: 5%;
+    cursor: pointer;
 
     -webkit-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 16px -10px rgba(0,0,0,0.75);
@@ -115,4 +116,48 @@
 .BuildingLabels_description p {
     margin-top: 10%;
     margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .BuildingLabels_description {
+        margin: 5px;
+        text-align: center;
+    }
+
+    .gridBuildingLabels {
+        width: 80%;
+        height: 70%;
+    }
+
+    .BuildingLabels_circle {
+        height: 70%;
+        width: 70%;
+    }
+
+    .BuildingLabels_circle h2 {
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .BuildingLabels_description {
+        margin: 1px;
+        text-align: center;
+    }
+
+    .gridBuildingLabels {
+        width: 80%;
+        height: 70%;
+    }
+
+    .BuildingLabels_circle {
+        height: 70%;
+        width: 90%;
+    }
+
+    .BuildingLabels_circle h2 {
+        font-size: 1.25rem;
+    }
+    
 }

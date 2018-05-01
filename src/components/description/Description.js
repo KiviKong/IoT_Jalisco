@@ -13,7 +13,7 @@ export class Description extends React.Component {
     return (
       <div className="descriptionArea">
         <div className="gridDescription">
-          <BuildingDescription onMouseOver = {this.props.onMouseOver} />
+          <BuildingDescription onClick = {this.props.onClick} />
         </div>
       </div>
     );

@@ -77,3 +77,22 @@
     transform: translate(-50%, -50%);
     border-radius: 15px;
 }
+
+@media only screen and (max-width: 1440px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+    }
+    .buttonPressed {
+        padding: 2px 2px;
+        font-size: 0.7rem;
+        width: 40%;
+    }
+    .button {
+        padding: 2px 2px;
+        font-size: 0.7rem;
+        width: 40%;
+    }
+}

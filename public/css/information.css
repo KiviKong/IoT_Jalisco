@@ -174,3 +174,29 @@ h1 b {
     transform: translate(-50%, -50%);
     border-radius: 15px;
 }
+
+
+@media only screen and (max-width: 1440px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .userInfogreeting h1 {
+        margin-top: 20px;
+        font-size: 1.0rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+    }
+    p {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .margin10 {
+        margin: 10px;
+    }
+
+    .userInfoColorsCode {
+        padding-bottom: 40px;
+    }
+    
+}

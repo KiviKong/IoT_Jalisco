@@ -10,9 +10,10 @@ export class BuildingDescription extends React.Component {
     this.state = {}
   }
 
-  handleMouseOver = (e) => {
+  handleOnClick = (e) => {
+    console.log(e.target);
     if (e.target.className === 'gridBuildingLabels') 
-        this.props.onMouseOver(elementos.get(e.target.textContent.charAt(0)));
+        this.props.onClick(elementos.get(e.target.textContent.charAt(0)));
   }
 
   createBuildings = () => {
@@ -22,7 +23,7 @@ export class BuildingDescription extends React.Component {
         buildings.push(
             (
                 <div key={i} className={'building_' + (i+1)}>
-                    <div className="gridBuildingLabels" onMouseOver={this.handleMouseOver}>
+                    <div className="gridBuildingLabels" onClick={this.handleOnClick}>
                         <div className="BuildingLabels_name">
                             <div className="BuildingLabels_circle">
                                 <h2>{edificios[i].nombre}</h2>
