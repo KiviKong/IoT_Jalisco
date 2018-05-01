@@ -14,7 +14,7 @@ export class Information extends React.Component {
       <div className="informationArea">
         <div className="gridInformation">
           <BuildingInfo edificio={this.props.edificio}/>
-          <UserInfo iddevice={this.props.iddevice}/>
+          <UserInfo user={this.props.user}/>
         </div>
       </div>
     );

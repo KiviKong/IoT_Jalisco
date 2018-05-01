@@ -10,7 +10,7 @@ export class UserInfo extends React.Component {
   render() {
     return (
         <div className="userInformationArea">
-            <h1>{this.props.iddevice}</h1>
+            <h1>{this.props.user.Attributes.nombre.S}</h1>
         </div>
     );
   }
